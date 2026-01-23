@@ -9,24 +9,24 @@ export const metadata: Metadata = {
 
 export default function TCCertificatePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-slate-50 pt-20">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-700/10 to-blue-900/10" />
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="flex items-center gap-2 mb-6">
-            <Link href="/" className="text-blue-700 hover:text-blue-900 transition-colors">
-              Home
-            </Link>
-            <span className="text-slate-400">/</span>
-            <span className="text-slate-600 font-medium">TC Certificate</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 animate-fade-in-up">Transfer Certificate</h1>
-          <p className="text-slate-600 text-lg max-w-2xl animate-fade-in-up delay-100">
-            Request your Transfer Certificate easily. Fill in your details below and we'll process your request.
-           </p>
-        </div>
-      </div>
+    // <div className="min-h-screen bg-gradient-to-b from-blue-50 to-slate-50 pt-20">
+    //   {/* Hero Section */}
+    //   <div className="relative overflow-hidden">
+    //     <div className="absolute inset-0 bg-gradient-to-r from-blue-700/10 to-blue-900/10" />
+    //     <div className="max-w-7xl mx-auto px-4 py-12">
+    //       <div className="flex items-center gap-2 mb-6">
+    //         <Link href="/" className="text-blue-700 hover:text-blue-900 transition-colors">
+    //           Home
+    //         </Link>
+    //         <span className="text-slate-400">/</span>
+    //         <span className="text-slate-600 font-medium">TC Certificate</span>
+    //       </div>
+    //       <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 animate-fade-in-up">Transfer Certificate</h1>
+    //       <p className="text-slate-600 text-lg max-w-2xl animate-fade-in-up delay-100">
+    //         Request your Transfer Certificate easily. Fill in your details below and we'll process your request.
+    //        </p>
+    //     </div>
+    //   </div>
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 py-12">
