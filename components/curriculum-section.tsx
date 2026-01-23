@@ -65,10 +65,10 @@ export default function CurriculumSection() {
                 <span className="text-blue-700 font-bold mr-3">•</span>
                 <span>Arts: Music, Dance, Theatre, Visual Arts</span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-blue-700 font-bold mr-3">•</span>
                 <span>Clubs: Science Club, Coding Club, Art & Craft Club</span>
-              </li>
+              </li> */}
               <li className="flex items-start">
                 <span className="text-blue-700 font-bold mr-3">•</span>
                 <span>
