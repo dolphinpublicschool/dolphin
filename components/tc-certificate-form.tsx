@@ -355,10 +355,10 @@ export default function TCCertificateForm() {
         )}
       </button>
 
-      <p className="text-xs text-slate-500 text-center">
+      {/* <p className="text-xs text-slate-500 text-center">
         By submitting this form, you agree to our terms and conditions. Your information will be processed according to
         our privacy policy.
-      </p>
+      </p> */}
     </form>
   )
 }
