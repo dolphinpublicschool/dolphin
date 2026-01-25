@@ -10,14 +10,14 @@ export default function TCCertificateForm() {
     admissionNumber: "",
     studentName: "",
     dateOfBirth: "",
-    fatherName: "",
-    motherName: "",
+    // fatherName: "",
+    // motherName: "",
     lastClassAttended: "",
     reasonForLeaving: "",
-    parentEmail: "",
-    parentPhone: "",
+    // parentEmail: "",
+    // parentPhone: "",
     deliveryMode: "school",
-    certificateImage: null as File | null,
+    // certificateImage: null as File | null,
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -49,48 +49,60 @@ export default function TCCertificateForm() {
     setIsSubmitting(true)
 
     try {
-      const googleFormURL = "https://docs.google.com/forms/u/0/d/e/YOUR_TC_FORM_ID/formResponse"
+      const googleFormURL =
+        "https://docs.google.com/forms/d/e/1FAIpQLSdg8f8yYlcIw2iWBc6jSUye8ah6HHIgF8DvKuIpnHveE1-IsQ/formResponse";
 
-      const params = new URLSearchParams()
-      params.append("entry.YOUR_ADMISSION_NUMBER_ID", formData.admissionNumber)
-      params.append("entry.YOUR_STUDENT_NAME_ID", formData.studentName)
-      params.append("entry.YOUR_DOB_ID", formData.dateOfBirth)
-      params.append("entry.YOUR_FATHER_NAME_ID", formData.fatherName)
-      params.append("entry.YOUR_MOTHER_NAME_ID", formData.motherName)
-      params.append("entry.YOUR_LAST_CLASS_ID", formData.lastClassAttended)
-      params.append("entry.YOUR_REASON_ID", formData.reasonForLeaving)
-      params.append("entry.YOUR_EMAIL_ID", formData.parentEmail)
-      params.append("entry.YOUR_PHONE_ID", formData.parentPhone)
-      params.append("entry.YOUR_DELIVERY_MODE_ID", formData.deliveryMode)
+      const params = new URLSearchParams();
+      params.append("entry.148026813", formData.admissionNumber);
+      params.append("entry.621188226", formData.studentName);
+
+      // ✅ DOB LOGIC — CREATE HERE
+      const dob = new Date(formData.dateOfBirth);
+      const year = dob.getFullYear().toString();
+      const month = (dob.getMonth() + 1).toString(); // 1–12
+      const day = dob.getDate().toString();
+
+      // ✅ SEND TO GOOGLE FORM DATE QUESTION
+      params.append("entry.1450740089_year", year);
+      params.append("entry.1450740089_month", month);
+      params.append("entry.1450740089_day", day);
+
+      // params.append("entry.YOUR_FATHER_NAME_ID", formData.fatherName)
+      // params.append("entry.YOUR_MOTHER_NAME_ID", formData.motherName)
+      params.append("entry.958341722", formData.lastClassAttended);
+      params.append("entry.1623582948", formData.reasonForLeaving);
+      // params.append("entry.YOUR_EMAIL_ID", formData.parentEmail)
+      // params.append("entry.YOUR_PHONE_ID", formData.parentPhone)
+      params.append("entry.2028605165", formData.deliveryMode);
 
       await fetch(googleFormURL, {
         method: "POST",
         body: params,
         mode: "no-cors",
-      })
+      });
 
-      setSubmitStatus("success")
+      setSubmitStatus("success");
       setStatusMessage(
         "Your TC Certificate request has been submitted successfully! Check your email for confirmation.",
-      )
-      formRef.current?.reset()
+      );
+      formRef.current?.reset();
       setFormData({
         admissionNumber: "",
         studentName: "",
         dateOfBirth: "",
-        fatherName: "",
-        motherName: "",
+        // fatherName: "",
+        // motherName: "",
         lastClassAttended: "",
         reasonForLeaving: "",
-        parentEmail: "",
-        parentPhone: "",
+        // parentEmail: "",
+        // parentPhone: "",
         deliveryMode: "school",
-        certificateImage: null,
-      })
+        // certificateImage: null,
+      });
 
       setTimeout(() => {
-        setSubmitStatus("idle")
-      }, 5000)
+        setSubmitStatus("idle");
+      }, 5000);
     } catch (error) {
       setSubmitStatus("error")
       setStatusMessage("Error submitting form. Please try again.")
@@ -171,10 +183,10 @@ export default function TCCertificateForm() {
               <option value="Class 6">Class 6</option>
               <option value="Class 7">Class 7</option>
               <option value="Class 8">Class 8</option>
-              <option value="Class 9">Class 9</option>
+              {/* <option value="Class 9">Class 9</option>
               <option value="Class 10">Class 10</option>
               <option value="Class 11">Class 11</option>
-              <option value="Class 12">Class 12</option>
+              <option value="Class 12">Class 12</option> */}
             </select>
           </div>
         </div>
