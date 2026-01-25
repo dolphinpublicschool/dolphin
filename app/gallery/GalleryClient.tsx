@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const galleryImages = [
   // { category: "Events", title: "Annual Sports Day 2024", image: "/sports-day-event.jpg" },
-  // { category: "Academics", title: "Science Fair", image: "/science.jpg" },
+   // { category: "Academics", title: "Science Fair", image: "/science.jpg" },
   // { category: "Campus", title: "Campus Building", image: "/campus.jpg" },
   { category: "Events", title: "Annual Day", image: "/annual.jpg" },
   { category: "Activities", title: "Art Workshop", image: "/art.jpg" },
