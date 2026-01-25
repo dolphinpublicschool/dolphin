@@ -23,16 +23,17 @@ export default function ContactForm() {
     e.preventDefault()
 
     // Get your Google Form IDs from the form inspection
-    const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSfDl5zBEjhP8ZXvPbqW1zBqPl1jyZZ-9999/formResponse"
+    const googleFormURL =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdWWRmt1RiUzpgG6dDFjkRF6RcnrtdiOKTweyULRzLfUjfiaQ/formResponse";
 
     const formParams = new FormData()
     // These field names need to match your Google Form field IDs
     // You should replace these with actual field IDs from your Google Form
-    formParams.append("entry.1234567890", formData.name) // Replace with actual field ID for name
-    formParams.append("entry.1234567891", formData.email) // Replace with actual field ID for email
-    formParams.append("entry.1234567892", formData.phone) // Replace with actual field ID for phone
-    formParams.append("entry.1234567893", formData.subject) // Replace with actual field ID for subject
-    formParams.append("entry.1234567894", formData.message) // Replace with actual field ID for message
+    formParams.append("entry.1587525900", formData.name); // Replace with actual field ID for name
+    formParams.append("entry.1946523431", formData.email); // Replace with actual field ID for email
+    formParams.append("entry.1981217419", formData.phone); // Replace with actual field ID for phone
+    formParams.append("entry.2138464681", formData.subject); // Replace with actual field ID for subject
+    formParams.append("entry.2115459579", formData.message); // Replace with actual field ID for message
 
     try {
       await fetch(googleFormURL, {
