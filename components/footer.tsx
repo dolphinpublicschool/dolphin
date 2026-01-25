@@ -72,7 +72,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                info@dolphinschool.edu.in
+                dolphinpublicschool.faridabad@gmail.com
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1" />
