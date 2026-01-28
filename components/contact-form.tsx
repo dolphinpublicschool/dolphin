@@ -30,7 +30,7 @@ export default function ContactForm() {
     // These field names need to match your Google Form field IDs
     // You should replace these with actual field IDs from your Google Form
     formParams.append("entry.1587525900", formData.name); // Replace with actual field ID for name
-    formParams.append("entry.1946523431", formData.email); // Replace with actual field ID for email
+    formParams.append("entry.1946523431", formData.email || ""); // Replace with actual field ID for email
     formParams.append("entry.1981217419", formData.phone); // Replace with actual field ID for phone
     formParams.append("entry.2138464681", formData.subject); // Replace with actual field ID for subject
     formParams.append("entry.2115459579", formData.message); // Replace with actual field ID for message
