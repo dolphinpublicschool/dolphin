@@ -264,7 +264,7 @@ export default function AboutPage() {
       </section>
 
       {/* Academic Excellence */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-[#1f3c88] text-center mb-16">
             Academic Excellence
@@ -358,7 +358,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
