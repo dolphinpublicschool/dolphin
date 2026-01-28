@@ -11,7 +11,7 @@ export default function CurriculumSection() {
             Our <span className="text-amber-700">Curriculum</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Balanced approach combining NCERT guidelines with modern learning
+            Balanced approach combining CBSE guidelines with modern learning
             methodologies
           </p>
         </div>
