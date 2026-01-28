@@ -68,9 +68,9 @@ export default function AboutPage() {
       {/* Quick Info Cards */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f5f7fa]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { number: "500+", label: "Students", delay: "delay-100" },
+              // { number: "500+", label: "Students", delay: "delay-100" },
               {
                 number: "30+",
                 label: "Experienced Teachers",
