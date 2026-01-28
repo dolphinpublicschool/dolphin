@@ -29,10 +29,10 @@ export default function CurriculumSection() {
                   English, Hindi, Mathematics, Science & Social Studies
                 </span>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <span className="text-amber-700 font-bold mr-3">•</span>
                 <span>Computer Science and Digital Literacy from Grade 1</span>
-              </li>
+              </li> */}
               <li className="flex items-start">
                 <span className="text-amber-700 font-bold mr-3">•</span>
                 <span>Regular assessments and parent-teacher interactions</span>
