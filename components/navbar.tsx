@@ -15,7 +15,7 @@ export default function Navbar() {
     { label: "About", href: "/about" },
     { label: "Academics", href: "/academics" },
     { label: "Gallery", href: "/gallery" },
-    { label: "TC Certificate", href: "/tc-certificate" },
+    // { label: "TC Certificate", href: "/tc-certificate" },
     { label: "Contact", href: "/contact" },
   ];
 
