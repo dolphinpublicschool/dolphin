@@ -106,7 +106,7 @@ export default function AboutPage() {
       {/* About School */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-1 gap-12 items-center">
             <div className="space-y-8 animate-slide-in-left">
               <div>
                 <h2 className="text-4xl font-bold text-[#1f3c88] mb-6">
@@ -143,13 +143,13 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6 animate-slide-in-right">
-              <div className="bg-gradient-to-br from-[#1f3c88] to-[#2d5aa8] rounded-2xl h-80 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              {/* <div className="bg-gradient-to-br from-[#1f3c88] to-[#2d5aa8] rounded-2xl h-80 overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <img
                   src="/school-campus-building.jpg"
                   alt="School campus"
                   className="w-full h-full object-cover"
                 />
-              </div>
+              </div> */}
               <div className="bg-[#f9a826] rounded-xl p-6 text-white">
                 <h3 className="text-xl font-bold mb-2">Recognition</h3>
                 <p>
