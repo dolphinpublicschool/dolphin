@@ -77,7 +77,7 @@ export default function ContactForm() {
 
         {/* Email */}
         <div>
-          <label className="block text-sm font-semibold text-slate-900 mb-2">Email *</label>
+          <label className="block text-sm font-semibold text-slate-900 mb-2">Email</label>
           <input
             type="email"
             name="email"
@@ -91,7 +91,7 @@ export default function ContactForm() {
 
         {/* Phone */}
         <div>
-          <label className="block text-sm font-semibold text-slate-900 mb-2">Phone</label>
+          <label className="block text-sm font-semibold text-slate-900 mb-2">Phone *</label>
           <input
             type="tel"
             name="phone"
